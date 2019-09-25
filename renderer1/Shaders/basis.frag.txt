@@ -1,0 +1,6 @@
+  #version 430\n  
+		  layout (location = 3) uniform sampler2D albedo;\n  
+		  in vec2 vUV;\n  
+		  in vec4 vColor;\n  
+		  out vec4 vertColor;\n  
+		  void main() { vertColor = texture(albedo,vUV); }  ;
